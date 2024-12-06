@@ -101,18 +101,18 @@ class _LoginPageState extends State<LoginPage> {
                 controller: _usernameController,
                 decoration: InputDecoration(
                   labelText: 'Username',
-                  border: OutlineInputBorder(), // Outlined border
+                  border: OutlineInputBorder(), 
                   contentPadding: EdgeInsets.symmetric(
-                      vertical: 16.0, horizontal: 10.0), // Padding
+                      vertical: 16.0, horizontal: 10.0), 
                 ),
-                style: GoogleFonts.poppins(), // Change font to Poppins
+                style: GoogleFonts.poppins(), 
               ),
               SizedBox(height: 20),
               TextField(
                 controller: _passwordController,
                 decoration: InputDecoration(
                   labelText: 'Password',
-                  border: OutlineInputBorder(), // Outlined border
+                  border: OutlineInputBorder(), 
                   suffixIcon: IconButton(
                     icon: Icon(
                       _showPassword ? Icons.visibility_off : Icons.visibility,
@@ -121,10 +121,10 @@ class _LoginPageState extends State<LoginPage> {
                         setState(() => _showPassword = !_showPassword),
                   ),
                   contentPadding: EdgeInsets.symmetric(
-                      vertical: 16.0, horizontal: 10.0), // Padding
+                      vertical: 16.0, horizontal: 10.0), 
                 ),
-                obscureText: !_showPassword, // Toggle password visibility
-                style: GoogleFonts.poppins(), // Change font to Poppins
+                obscureText: !_showPassword, 
+                style: GoogleFonts.poppins(), 
               ),
               SizedBox(height: 20),
               Row(
@@ -139,7 +139,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       Text('Remember Me',
                           style:
-                              GoogleFonts.poppins()), // Change font to Poppins
+                              GoogleFonts.poppins()), 
                     ],
                   ),
                 ],
